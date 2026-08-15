@@ -1,0 +1,71 @@
+:root{
+    --color: #02201f;
+    --sec-color: #bbfefa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--color);
+}
+.logo{
+    padding: 2rem;
+    margin-right: 2rem;
+    color: var(--sec-color);
+}
+.op{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.op input{
+    height: 50%;
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+    cursor: text;
+    background-color: var(--sec-color);
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.op input::placeholder{
+    color: var(--color);
+    opacity: 1;
+}
+.op button{
+    height: 50%;
+    padding: 1rem;
+    background-color: var(--sec-color);
+    color: var(--color);
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.an1{
+    display: inline-block;
+    margin: 20px;
+    padding: 2px;
+    animation: bg 1s ease-in-out 0s infinite alternate;
+    border-radius: 20px;
+}
+@keyframes bg{
+    0%{background: linear-gradient(red, yellow);}
+    50%{background: linear-gradient(yellow, blue);}
+    100%{background: linear-gradient(blue, pink);}
+}
+.an1 button{
+    padding: 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.an1 button:hover{
+    background: transparent;
+    transform: scale(0.95);
+}
