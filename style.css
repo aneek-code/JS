@@ -69,3 +69,14 @@ header{
     background: transparent;
     transform: scale(0.95);
 }
+
+.r1{
+    background-color: aquamarine;
+    color: rgb(145, 46, 46);
+    padding: 3rem;
+    line-height: 30px;
+}
+
+.r1v2{
+    background-color: chartreuse;
+}
