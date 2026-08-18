@@ -25,3 +25,7 @@ data(1,()=>{
     });
 });
 
+let pr= new Promise((resolve, reject)=>{
+    console.log("promise");
+    resolve("success");
+})
