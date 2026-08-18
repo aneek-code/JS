@@ -99,3 +99,38 @@ let r1= document.querySelector(".r1");
 // r1.setAttribute("class", "r1v2");
 
 r1.classList.add("r1v2");
+
+let inc= document.querySelector("#inc");
+let dec= document.querySelector("#dec");
+let counter= document.querySelector("#co");
+let i=0;
+
+// inc.onclick = () =>{
+//     console.log(`increase`);
+//     counter.innerText= ++i;
+// }
+
+// dec.onclick= () =>{
+//     console.log(`decrease`);
+//     counter.innerText= --i;
+// }
+
+inc.addEventListener("click", ()=>{
+    counter.innerText= ++i;
+});
+
+inc.addEventListener("click", ()=>{
+    inc.style.backgroundColor= "black";
+});
+
+inc.addEventListener("dblclick", ()=>{
+    inc.style.backgroundColor= "green";
+});
+
+dec.addEventListener("mouseenter",()=>{
+    dec.style.backgroundColor= "yellow";
+})
+
+dec.addEventListener("click", ()=>{
+    counter.innerText= --i;
+});

@@ -80,3 +80,17 @@ header{
 .r1v2{
     background-color: chartreuse;
 }
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter button{
+    width: 20%;
+    height: 10%;
+    margin: 3rem;
+}
+#co{
+    font-size: 2rem;
+}
