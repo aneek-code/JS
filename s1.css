@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color: rgba(25, 25, 145, 0.903);
+}
+main{
+    background-color: beige;
+}
+.logo{
+    padding: 1rem;
+    margin: 0 0 0 1rem;
+}
+.options ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0.5rem 2rem 0 0;
+}
+.options li{
+    padding: 1rem;
+}
+.main-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.side-news{
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+.news{
+    padding: 2rem;
+    animation: newstran 2s ease-in-out 0.2s 1 normal;
+    border-right: 2px solid gray;
+}
+.news h3{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.news p{
+    font-size: 0.8rem;
+}
+@keyframes newstran{
+    from{transform: translateX(-200px);}
+    to{transform: translateX(0px);}
+}
+.converter{
+    display: flex;
+    align-items: center;
+}
+.converter-in{
+    width: 100%;
+    background-color: rgb(49, 48, 58);
+    color: aliceblue;
+    border: 1px solid black;
+    border-right: 3px solid grey;
+    border-bottom: 3px solid grey;
+    border-top-left-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(75, 59, 59, 0.817);
+}
+#convhead{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.input-div{
+    display: flex;
+    justify-content: center;
+}
+#in{
+    width: 70%;
+    background-color: rgba(164, 158, 170, 0.465);
+    border: 1px solid black;
+    color: aliceblue;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+}
+.mid{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.from-to{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-opt{
+    width: 30%;
+    padding: 0.2rem;
+    background-color:rgba(164, 158, 170, 0.465) ;
+    color: aliceblue;
+}
+.submission{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    padding: 1rem;
+    background-color: rgba(96, 150, 132, 0.804);
+    color: aliceblue;
+}
+.final-msg{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(245, 214, 202);
+}

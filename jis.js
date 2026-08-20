@@ -28,4 +28,31 @@ data(1,()=>{
 let pr= new Promise((resolve, reject)=>{
     console.log("promise");
     resolve("success");
-})
+});
+
+const gp= ()=>{
+    return new Promise((resolve, reject)=>{
+        console.log('promise');
+        resolve('success');
+    });
+};
+
+let pr1= gp();
+pr1.then(()=>{
+    console.log('succesful');
+});
+
+function hello(x){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+        console.log(x);
+        resolve("success");
+    }, 2000);
+    });
+};
+
+async function get() {
+    await hello("modok");
+    await hello("sama");    
+}
+

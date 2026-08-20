@@ -1,109 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="s1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="s1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>Currency Converter</h1>
-        </div>
-        <div class="options">
-            <ul>
-                <li>search</li>
-                <li>trends</li>
-                <li>global news</li>
-                <li>forex market</li>
-            </ul>
-        </div>
+      <div class="logo">
+        <h1>Currency Converter</h1>
+      </div>
+      <div class="options">
+        <ul>
+          <li>search</li>
+          <li>trends</li>
+          <li>global news</li>
+          <li>forex market</li>
+        </ul>
+      </div>
     </header>
 
     <main>
+      <div class="main-info">
         <div class="side-news">
-            <div class="news">
-                <h3>Dollar Strengthens Against Major Currencies</h3>
-                <p>The US dollar gained ground as investors reacted to new economic data and market expectations.</p>
-            </div>
-            <div class="news">
-                <h3>Indian Rupee Shows Slight Movement</h3>
-                <p>The rupee experienced minor fluctuations against the US dollar during today's trading session.</p>
-            </div>
-            <div class="news">
-                <h3>Euro Remains Steady in Global Markets</h3>
-                <p>The euro held relatively stable as traders monitored economic developments across Europe.</p>
-            </div>
-            <div class="news">
-                <h3>Japanese Yen Attracts Investor Attention</h3>
-                <p>The yen saw increased activity as global markets responded to changing interest-rate expectations.</p>
-            </div>
-            <div class="news">
-                <h3>Currency Markets Remain Volatile</h3>
-                <p>Investors continue to watch inflation, interest rates, and global economic developments for clues about future currency movements.</p>
-            </div>
+          <div class="news">
+            <h3>Dollar Strengthens Against Major Currencies</h3>
+            <p>
+              The US dollar gained ground as investors reacted to new economic
+              data and market expectations.
+            </p>
+          </div>
+          <div class="news">
+            <h3>Indian Rupee Shows Slight Movement</h3>
+            <p>
+              The rupee experienced minor fluctuations against the US dollar
+              during today's trading session.
+            </p>
+          </div>
+          <div class="news">
+            <h3>Euro Remains Steady in Global Markets</h3>
+            <p>
+              The euro held relatively stable as traders monitored economic
+              developments across Europe.
+            </p>
+          </div>
+          <div class="news">
+            <h3>Japanese Yen Attracts Investor Attention</h3>
+            <p>
+              The yen saw increased activity as global markets responded to
+              changing interest-rate expectations.
+            </p>
+          </div>
+          <div class="news">
+            <h3>Currency Markets Remain Volatile</h3>
+            <p>
+              Investors continue to watch inflation, interest rates, and global
+              economic developments for clues about future currency movements.
+            </p>
+          </div>
         </div>
         <div class="converter">
-            <p>Enter amount</p>
-            <input type="number">
-            <h4>FROM</h4>
-            <select class="from">
-                <option>USD</option>
-                <option>INR</option>
-                <option>JPY</option>
-                <option>EUR</option>
-            </select>
-            <div class="icon">
-                <i class="fa-solid fa-money-bill-transfer"></i>
+          <div class="converter-in">
+            <h1 id="convhead">Enter amount</h1>
+            <div class="input-div">
+              <input type="number" id="in" />
             </div>
-            <h4>TO</h4>
-            <select class="to">
+            <div class="mid">
+              <h4>FROM</h4>
+
+              <div class="icon">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+              </div>
+              <h4>TO</h4>
+            </div>
+            <div class="from-to">
+              <select id="from" class="select-opt">
                 <option>USD</option>
                 <option>INR</option>
                 <option>JPY</option>
                 <option>EUR</option>
-            </select>
-            <button class="submit">GET EXCHANGE RATES</button>
+              </select>
+              <select id="to" class="select-opt">
+                <option>USD</option>
+                <option>INR</option>
+                <option>JPY</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="submission">
+              <button class="submit">GET EXCHANGE RATES</button>
+            </div>
             <p class="final-msg">1 USD= 100 INR</p>
+          </div>
         </div>
         <div class="chart">
-            <h3>Value of 1 USD</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th> Currency</th>
-                        <th> Exchange Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> INR</td>
-                        <td> 83.74</td>
-                    </tr>
-                    <tr>
-                        <td> EUR</td>
-                        <td> 0.92</td>
-                    </tr>
-                    <tr>
-                        <td> GBP</td>
-                        <td> 0.79</td>
-                    </tr>
-                    <tr>
-                        <td> JPY</td>
-                        <td> 151.74</td>
-                    </tr>
-                    <tr>
-                        <td> CAD</td>
-                        <td> 1.35</td>
-                    </tr>
-                </tbody>
-            </table>
-            <article class="graphs">
-                
-            </article>
+          <h3>Value of 1 USD</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Currency</th>
+                <th>Exchange Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>INR</td>
+                <td>83.74</td>
+              </tr>
+              <tr>
+                <td>EUR</td>
+                <td>0.92</td>
+              </tr>
+              <tr>
+                <td>GBP</td>
+                <td>0.79</td>
+              </tr>
+              <tr>
+                <td>JPY</td>
+                <td>151.74</td>
+              </tr>
+              <tr>
+                <td>CAD</td>
+                <td>1.35</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+      <article class="graphs">
+        <div class="g1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel hic
+            doloremque commodi magni atque? Velit voluptate alias atque facilis,
+            aliquam enim veniam explicabo ipsam soluta nemo corrupti doloremque
+            iusto at?
+          </p>
+        </div>
+        <div class="g2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            asperiores, ducimus quo dolor laudantium alias nobis incidunt velit.
+            Repudiandae doloremque odit iure, minus eaque deleniti voluptatibus
+            doloribus veritatis eligendi ab.
+          </p>
+        </div>
+        <div class="g3">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            debitis inventore voluptas perferendis consequuntur recusandae quis
+            dolor, fugit, voluptatibus earum dolores rem ab at! At commodi quae
+            illo consectetur distinctio.
+          </p>
+        </div>
+      </article>
     </main>
-</body>
+  </body>
 </html>
