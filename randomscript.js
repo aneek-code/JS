@@ -75,3 +75,33 @@ add_task.addEventListener("click", () => {
     new_task.remove();
   });
 });
+
+let dis = document.querySelector("#dis");
+let numbers = document.querySelectorAll(".number");
+let operators = document.querySelectorAll(".operator");
+let equal = document.querySelector("#equal");
+let clear = document.querySelector("#clear");
+
+numbers.forEach((number) => {
+  number.addEventListener("click", () => {
+    if (dis.innerText === "0") {
+      dis.innerText = number.innerText;
+    } else {
+      dis.innerText += number.innerText;
+    }
+  });
+});
+
+operators.forEach((operator) => {
+  operator.addEventListener("click", () => {
+    dis.innerText += operator.innerText;
+  });
+});
+
+equal.addEventListener("click", () => {
+  dis.innerText = eval(dis.innerText);
+});
+
+clear.addEventListener("click", () => {
+  dis.innerText = "0";
+});
