@@ -25,6 +25,7 @@ main {
 }
 .options li {
   padding: 1rem;
+  text-transform: capitalize;
 }
 .main-info {
   display: grid;
